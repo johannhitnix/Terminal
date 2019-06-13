@@ -16,14 +16,14 @@
 ### cd
 > change directory
 
-·`cd ~` y `cd`  go to home
+·`cd ~` y `cd` => go to home
 
 ### touch
 > crea archivos
 
-######·`touch ejemplo.txt` crea el archivo ejemplo.txt
+·`touch ejemplo.txt` => crea el archivo ejemplo.txt
 
 ### mkdir
 >*Make directory* crea directorios
 
-·`mkdir folder` crea el directorio folder
+·`mkdir folder` => crea el directorio folder
