@@ -36,7 +36,7 @@
 
 ·`mv <archivo> [ruta-directorio/]` => me mueve el archivo a la **ruta-directorio/**
 
-###rm
+### rm
 
 >Elimina archivos, links y carpetas
 
@@ -44,12 +44,12 @@
 
 ·`rm -rf <folder>` => borra recursivamente un folder y su contenido
 
-###man
+### man
 > Manual
 
 ·`man <comando>` => muestra el manual del comando solicitado, se sale con **q**
 
-###pushd & popd
+### pushd & popd
 
 >Es un stack de directorios y sirve para saltar de directorio en directorio sin usar **cd**
 
