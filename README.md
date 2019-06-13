@@ -16,7 +16,7 @@
 ### cd
 > change directory
 
-·`cd ~` y `cd` => go to home
+·`cd ~` y `cd` => go to home, el simbolo **~** es virgulilla
 
 ### touch
 > crea archivos
