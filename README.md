@@ -57,23 +57,30 @@
 
 ·**`popd`** => saca la ruta de la pila y me devuelve de un salto a donde estaba antes
 
-### more
+### more & less
+>Revelan el contenido de un archivo en terminal
 
 ·**`more <file>`** => Sirve para ver las primeras lineas de un archivo
 
+·**`less <file>`** => Muestra las lineas de un achivo y a diferencia de more hay que presionar **q** para salir
+
 ### cat
+>(concat) 2 propositos: revela el contenido o concatena contenido
 
 ·**`cat <file>`** => Muestra todo el contenido de un archivo
 
 ·**`cat > <file>`** => Abre un editor para concatenar texto al archivo, se cierra con **ctrl+c**
 
 ### tail
+>(cola) Revela ultimas lineas de un archivo
 
 ·**`tail <file>`** => muestra las ultimas 10 lineas de un archivo 
 
 ·**`tail -15 <file>`** => muestra las ultimas 15 lineas de un archivo
 
 ### which
+>Revela el origen de un comando
+
 ·**`which [cmd]`** => muestra en que directorio esta el comando
 
 ### alias
