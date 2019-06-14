@@ -67,16 +67,6 @@
 
 ·**`cat > <file>`** => Abre un editor para concatenar texto al archivo, se cierra con **ctrl+c**
 
-### more
-
-·**`more <file>`** => Sirve para ver las primeras lineas de un archivo
-
-### cat
-
-·**`cat <file>`** => Muestra todo el contenido de un archivo
-
-·**`cat > <file>`** => Abre un editor para concatenar texto al archivo, se cierra con **ctrl+c**, si el archivo no existe lo crea ahi mismo 
-
 ### tail
 
 ·**`tail <file>`** => muestra las ultimas 10 lineas de un archivo 
