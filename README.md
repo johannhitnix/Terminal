@@ -94,3 +94,42 @@
 
 ·**`echo $PATH`** => imprime la ruta
 
+### Stream
+>existen 3 tipos de streams:
+-> standard input (StdIn)
+-> standard output (StdOut)
+-> standard error (StdError): manda los errores a un archivo de errores
+
+·**`php streams.php > std_out`** => ejecuta el archvio **streams.php** y manda los resultados al archivo **std_out**
+
+### top
+>Muestra los procesos que se estan ejecutando
+
+·**`top`** => si presiono despues **`o`** me pide un criterio para ordenar los procesos, un criterio puede ser **cpu**, o **pid**. Me salgo de top presionando **`q`**
+
+### kill
+>Mata un proceso sin solicitar respuesta, es lo mas cercano al procesador
+
+.**`kill -9 <pid>`** => mata el proceso especificando su **pid**, pej *"kill -9 42336"* 
+
+### ps
+
+>Muestra el listado de procesos sin interaccion hay dos versiones de este cmd: la de Linux y la de Mac
+
+·**`ps -wA`** => listado sin interaccion vesion de Mac
+
+·**`ps -wS`** => listado sin interaccion version de Linux
+
+> **wc** (word-count), **|**(pipe)
+
+·**`ps -wA | wc -l`** => muestra el numero de procesos en ejecución.
+
+>**grep**
+
+·**`ps -wA | grep [key-word]`** => busca que procesos tiene esa palabra clave, pej *ps -wA | grep ttys00*
+
+### uptime
+
+>me dice cuanto lleva encendido el mac
+
+·**`uptime`** => dice la hora, cuanto tiempo lleva prendido, cuantos usuarios y la carga promedio
