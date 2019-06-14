@@ -57,7 +57,7 @@
 
 ·**`popd`** => saca la ruta de la pila y me devuelve de un salto a donde estaba antes
 
-#### more
+### more
 
 ·**`more <file>`** => Sirve para ver las primeras lineas de un archivo
 
@@ -67,7 +67,7 @@
 
 ·**`cat > <file>`** => Abre un editor para concatenar texto al archivo, se cierra con **ctrl+c**
 
-#### more
+### more
 
 ·**`more <file>`** => Sirve para ver las primeras lineas de un archivo
 
@@ -82,4 +82,18 @@
 ·**`tail <file>`** => muestra las ultimas 10 lineas de un archivo 
 
 ·**`tail -15 <file>`** => muestra las ultimas 15 lineas de un archivo
+
+### which
+·**`which [cmd]`** => muestra en que directorio esta el comando
+
+### alias
+
+>alias para un comando
+
+·**`alias <mi-alias>='[cmd]'`** => puedo encapsular comandos con cualquier alias que le ponga y ese comando puede ser llamado despues con el alias que le puse
+
+### variables
+>Las variables en consola comienzan con $, pej $PATH
+
+·**`echo $PATH`** => imprime la ruta
 
