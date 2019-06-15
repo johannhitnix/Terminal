@@ -78,6 +78,8 @@
 
 ·**`tail -15 <file>`** => muestra las ultimas 15 lineas de un archivo
 
+·**`tail -f std_out`** => imprime la ultima linea de un archivo en este caso **std_out**, no importa si es un archivo que esta siendo actualizado constantemente por un programa termino la ejecución con **ctrl+c**
+
 ### which
 >Revela el origen de un comando
 
@@ -94,13 +96,31 @@
 
 ·**`echo $PATH`** => imprime la ruta
 
-### Stream
+### Streams
 >existen 3 tipos de streams:
 -> standard input (StdIn)
 -> standard output (StdOut)
 -> standard error (StdError): manda los errores a un archivo de errores
 
-·**`php streams.php > std_out`** => ejecuta el archvio **streams.php** y manda los resultados al archivo **std_out**
+>si el archivo no existe lo crea y empieza a escribir desde cero
+
+·**`php streams.php > std_out`** => ejecuta el archvio **streams.php** y manda los resultados al archivo **std_out** termino la ejecución con **ctrl+c**
+
+>Usa dos variables **`1`** StreamOutput y **`2`** StreamError
+
+·**`php streams.php 1> salida 2> error`** => ejecuta el archivo y manda en dos archivos distintos los output y los errores
+
+> **`>>`** concatenar
+
+·**`php streams.php >> std_out`** => concatena los resultados en un archivo existente
+
+> **2>&1** 
+
+·**`php stream.php > todo.log 2>&1`** => Aqui se mando todo lo del stream 2 a donde se mande lo del stream 1 al archivo **todo.log**
+
+>Ejemplo mysql
+
+·**`mysql -u root -p < all_schema.sql`** => al ejecutar pide el password y ejecuta el script en mysql
 
 ### top
 >Muestra los procesos que se estan ejecutando
