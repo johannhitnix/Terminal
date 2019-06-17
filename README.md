@@ -166,6 +166,6 @@
 
 >secuencia de procesos
 
-·**`php streams2.php 4; echo "ya termine!"; php streams2.php 7`** => despues de terminar con el proceso 1 se sigue con el proceso 2 y asi sucesivamente concatenandolos con **`;**
+·**`php streams2.php 4; echo "ya termine!"; php streams2.php 7`** => despues de terminar con el proceso 1 se sigue con el proceso 2 y asi sucesivamente concatenandolos con **`;`**
 
 
