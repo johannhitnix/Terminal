@@ -1,7 +1,7 @@
 # Listado de comandos en Terminal
 
 ### ls
- > sirve para listar los archivos, tiene banderas **-l, -lh, -lha* *
+> sirve para listar los archivos, tiene banderas **-l, -lh, -lha* *
 
 ·**`ls`** => lista los directorios de forma vertical
 
@@ -12,6 +12,10 @@
 ·**`ls -a`** => list, all
 
 ·**`ls -lha`** => list, long, human readable, all
+
+> **WildCard `*`**
+
+·**`ls -l sal*`** => lista todas las opciones que tengan la cadena antes del **`*`**
 
 ### cd
 > change directory
@@ -153,3 +157,15 @@
 >me dice cuanto lleva encendido el mac
 
 ·**`uptime`** => dice la hora, cuanto tiempo lleva prendido, cuantos usuarios y la carga promedio
+
+### procesos
+
+>correr en background
+
+·**`php streams2.php 3 > salida.log 2>&1 &`** => con **&** al final se ejecuta el proceso en background y muestra su respectivo **pid**
+
+>secuencia de procesos
+
+·**`php streams2.php 4; echo "ya termine!"; php streams2.php 7`** => despues de terminar con el proceso 1 se sigue con el proceso 2 y asi sucesivamente concatenandolos con **;**
+
+
