@@ -169,3 +169,38 @@
 ·**`php streams2.php 4; echo "ya termine!"; php streams2.php 7`** => despues de terminar con el proceso 1 se sigue con el proceso 2 y asi sucesivamente concatenandolos con **`;`**
 
 
+## Power Tools 
+
+### grep
+
+>flags:
+**-r** recursivamente,
+**.** todos los archivos y directorios abajo, 
+**-e** expresión
+
+·**`grep -r . -e [palabra-a-buscar]`** => da como resultado la linea del archivo donde esta la palabra
+
+>**directorio/**
+
+·**`grep -r directorio/ -e [palabra-a-buscar]`** => aqui se especifico el directorio donde quiero buscar
+
+>**file**
+
+·**`grep <file> -e [palabra a buscar]`** => busca en un solo archivo
+
+>flag **-c** (count)
+
+·**`grep <file> -c -e [palabra-a-buscar]`** => muestra el numero de veces que la palabra aparece en el archivo
+
+·**`grep <file> -e [palabra-a-buscar] | wc -l>`** => se obtiene un resultado similar con este método propuesto en el curso
+
+> flag **-n**
+
+·**`grep -n -r . -e [palabra-a-buscar]`** => me adiciona el numero de linea donde aparece la palabra
+
+
+### date
+
+> truco para saber cuanto tarda un proceso
+
+·**`date; grep -r . -e ALARMA; date`** => hago un sandwich de dos date con un proceso y la diferencia de los dates me da una idea de cuanto se tardo
