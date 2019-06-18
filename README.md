@@ -204,3 +204,34 @@
 > truco para saber cuanto tarda un proceso
 
 ·**`date; grep -r . -e ALARMA; date`** => hago un sandwich de dos date con un proceso y la diferencia de los dates me da una idea de cuanto se tardo
+
+
+### find
+
+> busca cadenas en los archivos por su metadata: nombres, tipo de archivo, etc
+
+·**`find . -name '*.php' -type f`** => busca los archivos cuyo nombre termine en *.php* y que el tipo de archivo sea file
+
+> **| wc -l**
+
+·**`find . -name '*.php' -type f | wc -l`** => muestra el conteo de archivos con esas caracteristicas
+
+> **more**
+
+·**`find . -name '*.php' | more`** => para paginar 
+
+> **type d** (directorio)
+
+·**`find . -type d`** => va a buscar todos los tipo directorio 
+
+>busqueda en raiz **~/**
+
+·**`date; find ~/ -name '*.php' -type f > resultados_php; date`** => busca todos los archivos php en mi computadora, todo lo guarda en el archivo **resultados** y muestra cuanto tarda con los date
+
+> comando complementario **wc**
+
+·**`wc -l resultados_php`** => muestra el numero de lineas del archivo en este caso el numero de archivos php encontrados
+
+>ver todos los archivos
+
+·**`date; find ~/ -type f | wc -l; date`** => cuenta el total de archivos de mi computadora
