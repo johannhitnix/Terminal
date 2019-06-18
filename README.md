@@ -1,4 +1,4 @@
-# Listado de comandos en Terminal
+# 😎 Listado de comandos en Terminal 😜
 
 ### ls
 > sirve para listar los archivos, tiene banderas **-l, -lh, -lha* *
