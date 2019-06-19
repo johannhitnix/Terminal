@@ -235,3 +235,47 @@
 >ver todos los archivos
 
 ·**`date; find ~/ -type f | wc -l; date`** => cuenta el total de archivos de mi computadora
+
+### curl
+
+> emula los requests de un browser
+
+·**`curl [url] > aeropuertos.csv`** => trae todos los datos de la url dentro de mi archivo **aeropuertos.csv**
+
+### zip
+
+>comprime en un formato de valido par windows linux y mac
+
+·**`zip varios_csv.zip *.csv`** => comrime los archivos **csv** en un archivo **zip**
+
+### unzip
+
+>descomprime los zip
+
+·**`unzip varios_csv.zip`** => descomprime el zip pero no lo destruye
+
+>**-vl**
+
+·**`unzip -vl varios_csv.zip`** => no descomprime como tal, los descomprime de manera virtual y los lista con todos sus detalles 
+
+### tar
+
+>**cfz** create file zip
+
+·**`tar cfz varios_csv.tar.gz *.csv`** => crea un archivo **.tar.gz** y le añade los archivos en este caso los .csv y pesa un poquito menos que un zip
+
+>**xfz** extract file zip
+
+·**`tar xfz varios_csv.tar.gz`** => extrae lo que hay en un archivo **.tar.gz**
+
+### awk
+
+> Hace un exploit de un archivo separado por algun tipo de caracteres
+**-F** es el formato de separar columnas
+usa sintaxsis de **C** recordando que **%s** significa string
+**$2** es el campo de la segunda columna en el archivo
+
+·**`cat archivo.csv | awk -F"::" '{printf("%s - %s\n", $3 $2 )}' | more`** => muestra en pantalla la tercera y despues la segunda columna del archivo y concatena al final con **more**
+
+
+
