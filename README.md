@@ -277,5 +277,13 @@ usa sintaxsis de **C** recordando que **%s** significa string
 
 ·**`cat archivo.csv | awk -F"::" '{printf("%s - %s\n", $3 $2 )}' | more`** => muestra en pantalla la tercera y despues la segunda columna del archivo y concatena al final con **more**
 
+### | pipe
 
+> concatena el **STDOUT** del primer cmd al **STDIN** del segundo cmd tantas veces como quiera
+
+·**`cat peliculas.txt | grep Drama | awk -F"::" '{printf("%s\n", $1)}'`** => con pipe concateno los comandos **cat** con **grep**, y **grep** con **awk**
+
+>grep **-v**
+
+·**`cat peliculas.txt | grep Drama | awk -F"::" '{printf("%s\n", $1)}' | grep -v Comedia`** => con **grep -v** excluyo todo lo que tenga *Comedia*
 
