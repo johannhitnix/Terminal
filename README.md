@@ -152,6 +152,10 @@
 
 ·**`ps -wA | grep [key-word]`** => busca que procesos tiene esa palabra clave, pej *ps -wA | grep ttys00*
 
+>**aux**
+
+·**`ps aux`** => muestra un listado similar y tambien muestra que usuario del sistema esta ejecutando ese proceso
+
 ### uptime
 
 >me dice cuanto lleva encendido el mac
@@ -323,3 +327,55 @@ hace lo mismo que la opcion *"create alias"* en el menu click derecho de mac
 > borrar alias
 
 ·**`rm alias_proyecto`** => elimina mi alias pero no el contenido al que apunta
+
+### whoami
+
+>quien soy yo?
+
+·**`whoami`** => muestra el usuario activo
+
+### Linea de Permisos
+
+>**`-rwxr-----`** se divide en 4 partes:
+
+·**`-`** => dir/link/file
+
+·**`rwx`** => **onwer** reading, writing, execution
+
+·**`r--`** => **group** read
+
+·**`---`** => **anyone** no hay permisos de nada
+
+>valores binarios: **r** = 4, **w** = 2, **x** = 1
+
+##### combinacion de ternas:
+
+·**`r--`** => 4
+
+·**`rw-`** => 6
+
+·**`r-x`** => 5
+
+·**`--x`** => 1
+
+·**`-wx`** => 3
+
+·**`rwx`** => 7
+
+·**`---`** => 0
+
+##### ejemplos interpretación de ternas:
+
+·**`666`** => rw-rw-rw-
+
+·**`777`** => rwxrwxrwx
+
+·**`750`** => rwxr-x---
+
+·**`740`** => rwxr-----
+
+### chmod
+
+> change mod
+
+·**`chmod 740 <file>`** => cambia los permisos del archivo
