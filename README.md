@@ -287,3 +287,13 @@ usa sintaxsis de **C** recordando que **%s** significa string
 
 ·**`cat peliculas.txt | grep Drama | awk -F"::" '{printf("%s\n", $1)}' | grep -v Comedia`** => con **grep -v** excluyo todo lo que tenga *Comedia*
 
+
+### crontab
+
+>es una herramienta que permite ejecutar scripts, lo que permite automatizar tareas
+
+·**`crontab -l`** => lista los crontab programados, **col1** en que minuto, **col2** en que hora, **col3** en que dia del mes, **col4** en que mes del año,  **col5** que  dia de la semana, **col6** script que quiero que se ejecute
+
+·**`crontab -e`** => editar lo que esta en crontab
+
+·**`crontab -r`** => eliminar el crontab
