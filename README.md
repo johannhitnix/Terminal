@@ -297,3 +297,29 @@ usa sintaxsis de **C** recordando que **%s** significa string
 ·**`crontab -e`** => editar lo que esta en crontab
 
 ·**`crontab -r`** => eliminar el crontab
+
+### du
+
+> disk usage
+
+·**`du`** => muestra el uso de disco por parte de los nodos
+
+>**-h** human readable
+
+·**`du -h`** => comprensible para los humanos
+
+>**-d 1** deph
+
+·**`du -h -d 1`** => que la profundidad sea de uno
+
+### links simbolicos
+
+> apuntan a un directorio o archivo
+hace lo mismo que la opcion *"create alias"* en el menu click derecho de mac
+**ln -s** link simbolico
+
+·**`ln -s proyecto/ alias_proyecto`** => crea el alias que apunta a mi folder proyecto
+
+> borrar alias
+
+·**`rm alias_proyecto`** => elimina mi alias pero no el contenido al que apunta
